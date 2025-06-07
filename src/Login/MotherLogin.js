@@ -23,7 +23,7 @@ const Login = ({ setToken }) => {
     e.preventDefault();
     setError("");
     try {
-      const response = await axios.post("http://localhost:9000/motherlogin", {
+      const response = await axios.post("https://poc-pregnancy.onrender.com/motherlogin", {
         motherId,
         password,
       });
@@ -52,7 +52,7 @@ const Login = ({ setToken }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:9000/reg-mother", {
+      const response = await axios.post("https://poc-pregnancy.onrender.com/reg-mother", {
         name,
         motherId,
         email,
