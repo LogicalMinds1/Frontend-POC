@@ -434,7 +434,7 @@ const AncFullForm = () => {
       });
 
       const res = await axios.post(
-        "https://poc-pregnancy.onrender.com/save-and-predict",
+        "http://3.110.108.131:9000/save-and-predict",
         cleanedData,
         {
           headers: {

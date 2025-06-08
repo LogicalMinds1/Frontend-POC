@@ -81,7 +81,7 @@ const FileUploadForm = () => {
       setIsUploading(true);
 
       const response = await axios.post(
-        "https://poc-pregnancy.onrender.com/upload-test",
+        "http://3.110.108.131:9000/upload-test",
         formData,
         {
           headers: {

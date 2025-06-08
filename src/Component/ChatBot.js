@@ -31,7 +31,7 @@ const ChatBot = ({ onClose }) => {
       userNameRef.current = decodedName;
 
       try {
-        const res = await fetch("https://poc-pregnancy.onrender.com/chat/history", {
+        const res = await fetch("http://3.110.108.131:9000/chat/history", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -108,7 +108,7 @@ const ChatBot = ({ onClose }) => {
     setError(null);
 
     try {
-      const response = await fetch("https://poc-pregnancy.onrender.com/chat", {
+      const response = await fetch("http://3.110.108.131:9000/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
